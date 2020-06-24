@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README contains the information realted to the TODO app implemented on Rails and Dockerized
+Be sure to have already intalled both Docker Engine and Docker Compose, you can check that on the links porvided:
+https://docs.docker.com/get-docker/
+https://docs.docker.com/compose/install/
 
-Things you may want to cover:
+In order to run the app, follow this comands. 
 
-* Ruby version
+Once you check that run:
 
-* System dependencies
+sudo docker-compose up
 
-* Configuration
+Open youre favorite browser and type:
 
-* Database creation
+http://localhost:3000/
 
-* Database initialization
+In order to deploy the app make us of the nginx-deployment.yaml file.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+run: kubectl apply -f nginx-deployment.yaml
+ 
