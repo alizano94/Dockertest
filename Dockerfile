@@ -6,8 +6,6 @@ COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
 RUN bundle install
 COPY . /myapp
-#RUN rake db:setup
-#RUN rake db:migrate
 
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
